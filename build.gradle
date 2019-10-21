@@ -1,0 +1,23 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  testImplementation 'junit:junit:4.12'
+}
+
+mainClassName = 'ru.rgordeev.Launcher'
+version = '1.0'
+
+jar {
+    manifest {
+        attributes("Implementation-Title": project.name,
+            "Implementation-Version": version,
+            "Main-Class": mainClassName)
+    }
+}
