@@ -16,4 +16,12 @@ public class LauncherTest {
         Integer a = 2;
         Assert.assertEquals(Integer.valueOf(4), Launcher.nextEven(a));
     }
+
+    @Test
+    public void testPrintPrice() {
+        Integer a = 2;
+        Integer b = 50;
+        Integer n = 2;
+        Assert.assertEquals("5 0", Launcher.printPrice(a, b, n));
+    }
 }

@@ -7,8 +7,10 @@ public class Launcher {
         Scanner in = new Scanner(System.in);
 
         Integer a = in.nextInt();
+        Integer b = in.nextInt();
+        Integer n = in.nextInt();
 
-        System.out.println(nextEven(a));
+        System.out.println(printPrice(a, b, n));
     }
 
     public static Integer sum(Integer a) {
@@ -18,5 +20,10 @@ public class Launcher {
 
     public static Integer nextEven(Integer a) {
         return a % 2 == 0 ? a + 2 : a + 1;
+    }
+
+    public static String printPrice(Integer a, Integer b, Integer n) {
+        Integer c = (100 * a + b) * n;
+        return String.format("%d %d", c / 100, c % 100);
     }
 }
