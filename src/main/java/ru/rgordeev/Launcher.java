@@ -8,10 +8,11 @@ public class Launcher {
 
         Integer a = in.nextInt();
 
-        System.out.println(a % 10);
+        System.out.println(sum(a));
     }
 
-    public static Integer sum(Integer a, Integer b) {
-        return a + b;
+    public static Integer sum(Integer a) {
+        if (a == 0) return a;
+        return sum(a / 10) + a % 10;
     }
 }

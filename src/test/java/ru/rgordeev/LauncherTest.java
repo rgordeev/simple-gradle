@@ -7,8 +7,7 @@ public class LauncherTest {
 
     @Test
     public void testSum() {
-        Integer a = 1;
-        Integer b = 2;
-        Assert.assertEquals(Integer.valueOf(3), Launcher.sum(a, b));
+        Integer a = 12345;
+        Assert.assertEquals(Integer.valueOf(15), Launcher.sum(a));
     }
 }
