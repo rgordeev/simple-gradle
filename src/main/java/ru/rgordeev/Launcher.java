@@ -7,10 +7,13 @@ public class Launcher {
         Scanner in = new Scanner(System.in);
 
         Integer a = in.nextInt();
-        Integer b = in.nextInt();
-        Integer n = in.nextInt();
 
-        System.out.println(printPrice(a, b, n));
+        Integer n = a % 86400;
+        Integer h = n / 3600;
+        Integer m = (n - h * 3600) / 60;
+        Integer s = n - h * 3600 - m * 60;
+
+        System.out.println(String.format("%d:%02d:%02d", h,m,s));
     }
 
     public static Integer sum(Integer a) {
