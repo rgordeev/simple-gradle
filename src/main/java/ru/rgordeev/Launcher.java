@@ -7,9 +7,8 @@ public class Launcher {
         Scanner in = new Scanner(System.in);
 
         Integer a = in.nextInt();
-        Integer b = in.nextInt();
 
-        System.out.println(a + b);
+        System.out.println(a % 10);
     }
 
     public static Integer sum(Integer a, Integer b) {
