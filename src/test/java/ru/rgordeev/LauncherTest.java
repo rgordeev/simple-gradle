@@ -10,4 +10,10 @@ public class LauncherTest {
         Integer a = 12345;
         Assert.assertEquals(Integer.valueOf(15), Launcher.sum(a));
     }
+
+    @Test
+    public void testNextEven() {
+        Integer a = 2;
+        Assert.assertEquals(Integer.valueOf(4), Launcher.nextEven(a));
+    }
 }
