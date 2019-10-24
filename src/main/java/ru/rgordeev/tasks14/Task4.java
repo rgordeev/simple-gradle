@@ -8,6 +8,8 @@ public class Task4 {
         int a = in.nextInt();
         int b = in.nextInt();
 
-        System.out.println(a ^ (1 << b));
+        int mask = Integer.parseInt("1111111111111111111111111111111", 2);
+        mask = mask >> (31 - b);
+        System.out.println(a & mask);
     }
 }
