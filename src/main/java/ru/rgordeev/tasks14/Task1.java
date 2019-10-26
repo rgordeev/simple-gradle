@@ -7,10 +7,6 @@ public class Task1 {
         Scanner in = new Scanner(System.in);
         int a = in.nextInt();
         int b = in.nextInt();
-
-        int mask = Integer.parseInt("1111111111111111111111111111111", 2);
-
-
-        System.out.println(a & (mask << b));
+        System.out.println(a & -1 << b);
     }
 }
